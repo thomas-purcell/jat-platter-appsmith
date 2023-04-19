@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{ \n\t{ingredients: [SelectIngredients.isValid ? SelectCuisine.selectedOptionValues : []],\n\t\tcategory: SelectCategory.selectedOptionValue,\n\t\tcuisine: [SelectCuisine.isValid ? SelectCuisine.selectedOptionValues : []]\n\t}\n}}",
+      "body": "{{ \n\t{ingredients: [SelectIngredients.isValid ? SelectIngredients.selectedOptionValues : []],\n\t\tcategory: SelectCategory.selectedOptionValue,\n\t\tcuisine: [SelectCuisine.isValid ? SelectCuisine.selectedOptionValues : []]\n\t}\n}}",
       "bodyFormData": [],
       "httpMethod": "GET",
       "selfReferencingDataPaths": [],
@@ -52,7 +52,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      " \n\t{ingredients: [SelectIngredients.isValid ? SelectCuisine.selectedOptionValues : []],\n\t\tcategory: SelectCategory.selectedOptionValue,\n\t\tcuisine: [SelectCuisine.isValid ? SelectCuisine.selectedOptionValues : []]\n\t}\n"
+      " \n\t{ingredients: [SelectIngredients.isValid ? SelectIngredients.selectedOptionValues : []],\n\t\tcategory: SelectCategory.selectedOptionValue,\n\t\tcuisine: [SelectCuisine.isValid ? SelectCuisine.selectedOptionValues : []]\n\t}\n"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

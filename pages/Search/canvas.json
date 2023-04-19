@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1690,
+          "bottomRow": 1680,
           "containerStyle": "none",
           "snapRows": 65,
           "parentRowSpace": 1,
@@ -122,7 +122,7 @@
                       "minDynamicHeight": 4
                     },
                     {
-                      "resetFormOnClick": true,
+                      "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button1",
                       "onClick": "{{GetRecipes.run()}}",
@@ -178,8 +178,13 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "Button2",
-                      "onClick": "{{GetRecipes.run()}}",
+                      "onClick": "{{resetWidget(\"FormSearch\",true)}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -1043,7 +1048,7 @@
                 "group"
               ],
               "topRow": 70,
-              "bottomRow": 169,
+              "bottomRow": 168,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -1064,7 +1069,7 @@
                   "widgetName": "Canvas6",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 990,
+                  "bottomRow": 980,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -1253,7 +1258,7 @@
                         "label"
                       ],
                       "topRow": 12,
-                      "bottomRow": 17,
+                      "bottomRow": 16,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -1425,7 +1430,7 @@
                       "requiresFlatWidgetChildren": true,
                       "isCanvas": true,
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-                      "topRow": 21,
+                      "topRow": 20,
                       "pageSize": 4,
                       "type": "LIST_WIDGET_V2",
                       "itemSpacing": 8,
@@ -1768,7 +1773,7 @@
                       "widgetName": "ListIngredients",
                       "listData": "{{GetIngredientsById.data}}",
                       "displayName": "List",
-                      "bottomRow": 55,
+                      "bottomRow": 54,
                       "parentRowSpace": 10,
                       "hideCard": false,
                       "templateBottomRow": 16,
@@ -1799,7 +1804,7 @@
                       "requiresFlatWidgetChildren": true,
                       "isCanvas": true,
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-                      "topRow": 59,
+                      "topRow": 58,
                       "pageSize": 5,
                       "type": "LIST_WIDGET_V2",
                       "itemSpacing": 8,
@@ -2029,7 +2034,7 @@
                       "widgetName": "ListInstructions",
                       "listData": "{{GetInstructionsById.data}}",
                       "displayName": "List",
-                      "bottomRow": 97,
+                      "bottomRow": 96,
                       "parentRowSpace": 10,
                       "hideCard": false,
                       "templateBottomRow": 16,
@@ -2064,8 +2069,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 17,
-                      "bottomRow": 21,
+                      "topRow": 16,
+                      "bottomRow": 20,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -2120,8 +2125,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 55,
-                      "bottomRow": 59,
+                      "topRow": 54,
+                      "bottomRow": 58,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -2202,7 +2207,7 @@
               "originalTopRow": 70,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 169,
+              "originalBottomRow": 168,
               "minDynamicHeight": 10
             }
           ]
@@ -2261,7 +2266,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                " \n\t{ingredients: [SelectIngredients.isValid ? SelectCuisine.selectedOptionValues : []],\n\t\tcategory: SelectCategory.selectedOptionValue,\n\t\tcuisine: [SelectCuisine.isValid ? SelectCuisine.selectedOptionValues : []]\n\t}\n"
+                " \n\t{ingredients: [SelectIngredients.isValid ? SelectIngredients.selectedOptionValues : []],\n\t\tcategory: SelectCategory.selectedOptionValue,\n\t\tcuisine: [SelectCuisine.isValid ? SelectCuisine.selectedOptionValues : []]\n\t}\n"
               ],
               "timeoutInMillisecond": 10000
             },
