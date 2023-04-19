@@ -11,6 +11,10 @@
     {
       "id": "Search",
       "isDefault": false
+    },
+    {
+      "id": "CriticFollowing",
+      "isDefault": false
     }
   ],
   "viewMode": false,
@@ -18,6 +22,9 @@
   "unreadCommentThreads": 0,
   "color": "#EAEDFB",
   "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "publishedAppLayout": {
     "type": "DESKTOP"
   },
   "unpublishedCustomJSLibs": [],
