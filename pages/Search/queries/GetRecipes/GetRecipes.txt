@@ -1,0 +1,6 @@
+{{ 
+	{ingredients: [SelectIngredients.isValid ? SelectCuisine.selectedOptionValues : []],
+		category: SelectCategory.selectedOptionValue,
+		cuisine: [SelectCuisine.isValid ? SelectCuisine.selectedOptionValues : []]
+	}
+}}
