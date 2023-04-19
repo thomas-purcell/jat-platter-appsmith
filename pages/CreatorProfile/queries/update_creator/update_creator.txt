@@ -1,0 +1,4 @@
+{{
+	{firstName: InputFirstName.inputText,
+	lastName: InputLastName.inputText}
+}}

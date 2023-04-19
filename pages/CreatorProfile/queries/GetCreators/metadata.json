@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "GetIngredients",
+    "name": "GetCreators",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/cri/ingredients"
+        "url": "web:4000/cre/accounts/creator"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Search",
+    "pageId": "CreatorProfile",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Search_GetIngredients",
+  "id": "CreatorProfile_GetCreators",
   "deleted": false,
-  "gitSyncId": "643f3c9b8d9dd25d0234b67e_643f6c268d9dd25d0234b6ac"
+  "gitSyncId": "643ee528e993ff031d1ec514_64405e0a3e2f5e50d958ca51"
 }

@@ -15,6 +15,10 @@
     {
       "id": "CriticProfile",
       "isDefault": false
+    },
+    {
+      "id": "CreatorProfile",
+      "isDefault": false
     }
   ],
   "viewMode": false,

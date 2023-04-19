@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "GetIngredients",
+    "name": "GetCritics",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/cri/ingredients"
+        "url": "web:4000/cri/accounts/critics"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Search",
+    "pageId": "CreatorProfile",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -36,7 +36,7 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Search_GetIngredients",
+  "id": "CreatorProfile_GetCritics",
   "deleted": false,
-  "gitSyncId": "643f3c9b8d9dd25d0234b67e_643f6c268d9dd25d0234b6ac"
+  "gitSyncId": "643ee528e993ff031d1ec514_64405e0a3e2f5e50d958ca59"
 }
