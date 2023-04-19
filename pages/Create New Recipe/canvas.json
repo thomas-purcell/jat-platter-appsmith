@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1610,
+          "bottomRow": 1600,
           "containerStyle": "none",
           "snapRows": 61,
           "parentRowSpace": 1,
@@ -38,7 +38,7 @@
                 "group"
               ],
               "topRow": 51,
-              "bottomRow": 161,
+              "bottomRow": 160,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -59,7 +59,7 @@
                   "widgetName": "Canvas6",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1100,
+                  "bottomRow": 1090,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -189,7 +189,7 @@
                         "label"
                       ],
                       "topRow": 23,
-                      "bottomRow": 28,
+                      "bottomRow": 27,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -234,7 +234,7 @@
                       "originalTopRow": 23,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 27,
+                      "originalBottomRow": 28,
                       "fontSize": "0.875rem",
                       "minDynamicHeight": 4
                     },
@@ -361,7 +361,7 @@
                       "requiresFlatWidgetChildren": true,
                       "isCanvas": true,
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-                      "topRow": 32,
+                      "topRow": 31,
                       "pageSize": 5,
                       "type": "LIST_WIDGET_V2",
                       "itemSpacing": 8,
@@ -692,7 +692,7 @@
                       "isLoading": false,
                       "mainCanvasId": "swvotlrpqi",
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 65,
+                      "originalBottomRow": 66,
                       "additionalStaticProps": [
                         "level",
                         "levelData",
@@ -704,7 +704,7 @@
                       "widgetName": "ListIngredients",
                       "listData": "{{GetIngredientsById?.data ?? []}}",
                       "displayName": "List",
-                      "bottomRow": 66,
+                      "bottomRow": 65,
                       "parentRowSpace": 10,
                       "hideCard": false,
                       "templateBottomRow": 16,
@@ -727,7 +727,7 @@
                       "parentId": "3eoaayezw9",
                       "renderMode": "CANVAS",
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 31,
+                      "originalTopRow": 32,
                       "selectedItemView": "{{{}}}"
                     },
                     {
@@ -735,7 +735,7 @@
                       "requiresFlatWidgetChildren": true,
                       "isCanvas": true,
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-                      "topRow": 70,
+                      "topRow": 69,
                       "pageSize": 6,
                       "type": "LIST_WIDGET_V2",
                       "itemSpacing": 8,
@@ -953,7 +953,7 @@
                       "isLoading": false,
                       "mainCanvasId": "tbibh8k0qc",
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 107,
+                      "originalBottomRow": 108,
                       "additionalStaticProps": [
                         "level",
                         "levelData",
@@ -965,7 +965,7 @@
                       "widgetName": "ListInstructions",
                       "listData": "{{GetInstructionsById?.data ?? []}}",
                       "displayName": "List",
-                      "bottomRow": 108,
+                      "bottomRow": 107,
                       "parentRowSpace": 10,
                       "hideCard": false,
                       "templateBottomRow": 16,
@@ -988,7 +988,7 @@
                       "parentId": "3eoaayezw9",
                       "renderMode": "CANVAS",
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 69,
+                      "originalTopRow": 70,
                       "selectedItemView": "{{{}}}"
                     },
                     {
@@ -1000,8 +1000,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 28,
-                      "bottomRow": 32,
+                      "topRow": 27,
+                      "bottomRow": 31,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -1040,10 +1040,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 27,
+                      "originalTopRow": 28,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 31,
+                      "originalBottomRow": 32,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
@@ -1056,8 +1056,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 66,
-                      "bottomRow": 70,
+                      "topRow": 65,
+                      "bottomRow": 69,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -1096,10 +1096,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 65,
+                      "originalTopRow": 66,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 69,
+                      "originalBottomRow": 70,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
@@ -1328,7 +1328,7 @@
               "originalTopRow": 51,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 160,
+              "originalBottomRow": 161,
               "minDynamicHeight": 10
             },
             {
@@ -1431,7 +1431,7 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "submit_recipe",
-                      "onClick": "{{create_recipe.run(() => {}, () => showAlert(create_recipe.data,'error'))}}",
+                      "onClick": "{{create_recipe.run(() => get_recipes.run(), () => showAlert(create_recipe.data,'error'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {
