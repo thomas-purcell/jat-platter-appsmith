@@ -554,7 +554,7 @@
                         }
                       ],
                       "labelPosition": "Top",
-                      "options": "{{get_origins.data.map((o) => {\n\treturn {\n\t\tlabel: o.origin,\n\t\tvalue: o.originID\n\t};\n\t})}}",
+                      "options": "{{get_origins.data}}",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "yagy5hnwma",
@@ -613,7 +613,7 @@
                         }
                       ],
                       "labelPosition": "Top",
-                      "options": "{{get_categories.data.map((c) => {\n\treturn {\n\t\tlabel: c.course + \" - \" + c.dietType,\n\t\tvalue: c.categoryID\n\t};\n\t})}}",
+                      "options": "{{get_categories.data}}",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "yagy5hnwma",
@@ -2264,16 +2264,18 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Create New Recipe_get_ingredients",
-              "name": "get_ingredients",
+              "id": "Create New Recipe_get_origins",
+              "name": "get_origins",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
-              "id": "Create New Recipe_get_origins",
-              "name": "get_origins",
+              "id": "Create New Recipe_get_ingredients",
+              "name": "get_ingredients",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
