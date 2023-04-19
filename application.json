@@ -7,12 +7,26 @@
     {
       "id": "Create New Recipe",
       "isDefault": false
+    },
+    {
+      "id": "Search",
+      "isDefault": false
+    },
+    {
+      "id": "CriticProfile",
+      "isDefault": false
     }
   ],
   "viewMode": false,
   "appIsExample": false,
   "unreadCommentThreads": 0,
   "color": "#EAEDFB",
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "publishedAppLayout": {
+    "type": "DESKTOP"
+  },
   "unpublishedCustomJSLibs": [],
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
