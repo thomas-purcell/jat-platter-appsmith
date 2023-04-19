@@ -2266,7 +2266,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                " \n\t{ingredients: [SelectIngredients.isValid ? SelectIngredients.selectedOptionValues : []],\n\t\tcategory: SelectCategory.selectedOptionValue,\n\t\tcuisine: [SelectCuisine.isValid ? SelectCuisine.selectedOptionValues : []]\n\t}\n"
+                " \n\t{ingredients: [SelectIngredients.isValid ? SelectIngredients.selectedOptionLabels : []],\n\t\tcategory: SelectCategory.selectedOptionLabel,\n\t\tcuisine: [SelectCuisine.isValid ? SelectCuisine.selectedOptionLabels : []]\n\t}\n"
               ],
               "timeoutInMillisecond": 10000
             },

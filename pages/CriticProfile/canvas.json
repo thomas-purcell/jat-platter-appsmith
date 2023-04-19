@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "CriticFollowing",
-    "slug": "criticfollowing",
+    "name": "CriticProfile",
+    "slug": "criticprofile",
     "layouts": [
       {
         "viewMode": false,
@@ -455,7 +455,7 @@
                       "triggeredItemView": "{{{}}}",
                       "widgetName": "ListFollowing",
                       "requiresFlatWidgetChildren": true,
-                      "listData": "{{GetFollowing.data}}",
+                      "listData": "{{GetFollowing?.data || []}}",
                       "isCanvas": true,
                       "displayName": "List",
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
@@ -896,7 +896,7 @@
                       "triggeredItemView": "{{{}}}",
                       "widgetName": "ListBookmarks",
                       "requiresFlatWidgetChildren": true,
-                      "listData": "{{GetBookmarks.data}}",
+                      "listData": "{{GetBookmarks?.data || []}}",
                       "isCanvas": true,
                       "displayName": "List",
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
@@ -1353,7 +1353,7 @@
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "borderColor": "#E0DEDE",
-              "widgetName": "Form1",
+              "widgetName": "FormUpdateAccount",
               "isCanvas": true,
               "displayName": "Form",
               "iconSVG": "/static/media/icon.ea3e08d130e59c56867ae40114c10eed.svg",
@@ -1445,9 +1445,10 @@
                       "minDynamicHeight": 4
                     },
                     {
-                      "resetFormOnClick": true,
+                      "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button2",
+                      "onClick": "{{UpdateCritic.run(() => GetCritics.run(), () => {})}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -1460,6 +1461,11 @@
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 32,
                       "dynamicBindingPathList": [
                         {
@@ -1493,6 +1499,7 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "Button3",
+                      "onClick": "",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -1505,6 +1512,11 @@
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 15,
                       "dynamicBindingPathList": [
                         {
@@ -1563,6 +1575,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelPosition": "Top",
@@ -1590,12 +1605,12 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "{{GetCritics.data.find((c) => c.criticID == Login.selectedOptionValue)?.fName || ''\n}}",
                       "minDynamicHeight": 4
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "InputFirstNameCopy",
+                      "widgetName": "InputLastName",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -1622,6 +1637,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelPosition": "Top",
@@ -1649,7 +1667,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "{{GetCritics.data.find((c) => c.criticID == Login.selectedOptionValue)?.lName || ''\n}}",
                       "minDynamicHeight": 4
                     }
                   ],
@@ -1694,37 +1712,17 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "CriticFollowing_GetBookmarks",
-              "name": "GetBookmarks",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Login.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "CriticFollowing_GetCritics",
+              "id": "CriticProfile_GetCritics",
               "name": "GetCritics",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "CriticFollowing_GetFollowing",
-              "name": "GetFollowing",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Login.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
             }
           ],
           [
             {
-              "id": "CriticFollowing_GetCreators",
+              "id": "CriticProfile_GetCreators",
               "name": "GetCreators",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -1735,7 +1733,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "CriticFollowing",
+        "id": "CriticProfile",
         "deleted": false,
         "policies": [],
         "userPermissions": []

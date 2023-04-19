@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "CriticFollowing",
+    "pageId": "CriticProfile",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -36,7 +36,7 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "datasourceUrl"
@@ -53,7 +53,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "CriticFollowing_GetFollowing",
+  "id": "CriticProfile_GetFollowing",
   "deleted": false,
   "gitSyncId": "643f3c9b8d9dd25d0234b67e_643f95538d9dd25d0234b6dd"
 }
