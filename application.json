@@ -1,11 +1,11 @@
 {
   "pages": [
     {
-      "id": "Page1",
+      "id": "Platter Home",
       "isDefault": true
     },
     {
-      "id": "Page2",
+      "id": "Create New Recipe",
       "isDefault": false
     }
   ],
