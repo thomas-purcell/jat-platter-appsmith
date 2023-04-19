@@ -30,7 +30,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{new_recipe_form.data}}",
+      "body": "{{\n\t{\n\t\t...new_recipe_form.data,\n\t\t\"creatorID\": logged_in_select.selectedOptionValue,\n\t\t\"categoryID\": new_recipe_form.data.category ?? '',\n\t\t\"originID\": new_recipe_form.data.cuisine_origin ?? '',\n\t}\n}}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -53,7 +53,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "new_recipe_form.data"
+      "\n\t{\n\t\t...new_recipe_form.data,\n\t\t\"creatorID\": logged_in_select.selectedOptionValue,\n\t\t\"categoryID\": new_recipe_form.data.category ?? '',\n\t\t\"originID\": new_recipe_form.data.cuisine_origin ?? '',\n\t}\n"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

@@ -1,1 +1,8 @@
-{{new_recipe_form.data}}
+{{
+	{
+		...new_recipe_form.data,
+		"creatorID": logged_in_select.selectedOptionValue,
+		"categoryID": new_recipe_form.data.category ?? '',
+		"originID": new_recipe_form.data.cuisine_origin ?? '',
+	}
+}}
