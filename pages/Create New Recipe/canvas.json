@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 840,
+          "bottomRow": 1200,
           "containerStyle": "none",
           "snapRows": 61,
           "parentRowSpace": 1,
@@ -400,7 +400,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "servingsCopy",
+                      "widgetName": "cook_time",
                       "dynamicPropertyPathList": [],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
@@ -461,7 +461,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "servingsCopyCopy",
+                      "widgetName": "prep_time",
                       "dynamicPropertyPathList": [],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
@@ -554,7 +554,7 @@
                         }
                       ],
                       "labelPosition": "Top",
-                      "options": "{{get_origins.data}}",
+                      "options": "{{get_origins.data.map((o) => {\n\treturn {\n\t\tlabel: o.origin,\n\t\tvalue: o.originID\n\t};\n\t})}}",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "yagy5hnwma",
@@ -613,7 +613,7 @@
                         }
                       ],
                       "labelPosition": "Top",
-                      "options": "{{get_categories.data}}",
+                      "options": "{{get_categories.data.map((c) => {\n\treturn {\n\t\tlabel: c.course + \" - \" + c.dietType,\n\t\tvalue: c.categoryID\n\t};\n\t})}}",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "yagy5hnwma",
@@ -1796,15 +1796,15 @@
               "searchTags": [
                 "group"
               ],
-              "topRow": 50,
-              "bottomRow": 83,
+              "topRow": 87,
+              "bottomRow": 120,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 30.15625,
-              "leftColumn": 30,
+              "leftColumn": 5,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -2191,7 +2191,7 @@
                         }
                       ],
                       "labelPosition": "Top",
-                      "options": "{{get_ingredients.data}}",
+                      "options": "{{\tget_ingredients.data.map(i =>  {\n\t\t\treturn {\n\t\t\t\tlabel: i.name,\n\t\t\t\tvalue: i.ingredientID\n\t\t\t}\n\t\t})\n\t}}",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "yagy5hnwma",
@@ -2236,7 +2236,7 @@
               "key": "vx84prcwx9",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 52,
+              "rightColumn": 27,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "5ex3m3wu1v",
               "minWidth": 450,
@@ -2245,10 +2245,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 50,
+              "originalTopRow": 87,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 83,
+              "originalBottomRow": 120,
               "minDynamicHeight": 10
             }
           ]
